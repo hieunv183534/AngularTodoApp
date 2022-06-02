@@ -1,0 +1,4 @@
+<p>Danh sách công việc</p>
+<ul>
+    <li *ngFor="let action of listAction;">{{action}} <button (click)="deleteAction(action)">xóa</button></li>
+</ul>
