@@ -1,0 +1,7 @@
+<p>Danh sách công việc</p>
+<ul>
+    <li *ngFor="let action of listAction;" style="height: 50px; display: flex; align-items: center;">{{action}}
+        <button pButton pRipple type="button" icon="pi pi-times"
+            class="p-button-rounded p-button-danger p-button-outlined" (click)="deleteAction(action)"></button>
+    </li>
+</ul>
